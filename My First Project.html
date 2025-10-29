@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first big proje</title>
+    <link rel="stylesheet" href="./My First Project_files/app.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="mini-div" style="background-color: hsl(31, 66%, 93%);grid-area: box-1;">
+          <div class="quicker">Create and schedule content <em style="color: hsl(256, 67%, 59%);">quicker.</em></div>
+          <img class="post" src="./My First Project_files/illustration-create-post.webp" alt="post">
+        </div>
+       <div class="mini-div" style="background-color:hsl(256, 67%, 59%); grid-area: box-2;">
+           <div class="social-media">Social Media <span style="color: yellow;">10x</span> <em> Faster</em> with AI</div>
+           <img class="stars" src="./My First Project_files/illustration-five-stars.webp" alt="star">
+           <p class="over"> Over 4,000 5-star reviews</p> 
+       </div>
+       <div class="mini-div" style="background-color: hsl(254, 88%, 90%);grid-area: box-3;">
+          <div class="schedule">Schedule to social media.</div>
+          <img class="scheduleimg" src="./My First Project_files/illustration-schedule-posts.webp" alt="">
+          <p class="optimize">Optimize post timings to publish content at the perfect time for your audience.</p>
+       </div>
+       <div class="mini-div" style="background-color: hsl(39, 100%, 71%);grid-area: box-4;">
+           <div class="write">Write your content using AI</div>
+           <img class="content" src="./My First Project_files/illustration-ai-content.webp" alt="content">
+       </div>
+       <div class="mini-div" style="background-color: hsl(0, 0%, 100%); grid-area: box-5;">
+            <img class="multiple" src="./My First Project_files/illustration-multiple-platforms.webp" alt="multiple">
+            <p class="manage">Manage multiple accounts and platforms.</p>
+       </div>
+       <div class="mini-div" style="background-color: hsl(39, 100%, 71%);grid-area: box-6;">
+            <div class="maintain">Maintain a consistent posting schedule.</div>
+            <img class="consis" src="./My First Project_files/illustration-consistent-schedule.webp" alt="consis">
+       </div>
+       <div class="mini-div" style="background-color: white; grid-area: box-7;">
+             <div class="b56">&gt;56%</div>
+             <p class="faster">faster audience growth</p>
+             <img class="audience" src="./My First Project_files/illustration-audience-growth.webp" alt="audience">
+       </div>
+       <div class="mini-div" style="background-color: hsl(256, 67%, 59%); grid-area: box-8;">
+             <img class="followers" src="./My First Project_files/illustration-grow-followers.webp" alt="followers">
+             <div class="grow">Grow followers with non-stop content.</div>
+             
+       </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
