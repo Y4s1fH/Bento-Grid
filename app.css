@@ -1,28 +1,21 @@
-.main-div{
-
-    display: grid;
-    grid-auto-rows: 75px;
-    grid-auto-columns: 1fr;
-    column-gap: 19px; 
-    row-gap: 19px;
-    background-color: #F6F5F8;
-    margin: 60px 100px 60px 100px;
-    
-    grid-template-areas: 
-    "box-1 box-2 box-2 box-3"
-    "box-1 box-2 box-2 box-3"
-    "box-1 box-2 box-2 box-3"
-    "box-1 box-2 box-2 box-3"
-    "box-1 box-5 box-6 box-3"
-    "box-4 box-5 box-6 box-3"
-    "box-4 box-5 box-6 box-3"
-    "box-4 box-7 box-8 box-8"
-    "box-4 box-7 box-8 box-8"
-    "box-4 box-7 box-8 box-8";
-    
-    
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+.img{
+    max-width: 100%;
+    display: block;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  font-size: 18px;
+  line-height: 1;
+  display: grid;
+  place-content: center;
+}
 @font-face {
   font-family: 'DM Sans';
   src: url('fonts/static/DMSans-Regular.ttf') format('truetype');
@@ -47,146 +40,303 @@
   font-weight: 100 900; /* dəyişən aralıq */
   font-style: normal;
 }
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  
-}
-
-
-/* birinci qutunun ici: */    
-.quicker{
-    font-size: 40px;
-    padding-left: 25px;
-    padding-top: 70px;
-    font-weight: bold;
+.main-div{
+    max-width: 1400px;
+    margin: 1rem;
+    display: grid;
+    grid-auto-rows: 75px;
+    grid-auto-columns: 1fr;
+    column-gap: 2rem; 
+    row-gap: 2rem;
+    grid-template-areas: 
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-5 box-6 box-3"
+    "box-4 box-5 box-6 box-3"
+    "box-4 box-5 box-6 box-3"
+    "box-4 box-7 box-8 box-8"
+    "box-4 box-7 box-8 box-8"
+    "box-4 box-7 box-8 box-8";
+    
     
 }
-.post{
-    height: 80px;
-    width: 200px;
-    padding-left: 20px;
-    padding-top: 20px;
+
+
+
+.main-div .mini-div{
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.main-div .mini-div:first-child{
+    background-color:hsl(31, 66%, 93%) ;
+    grid-area: box-1;
+    padding-top: 6rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
+    padding-left: 2.5rem;
+}
+.main-div .mini-div:nth-child(2){
+    background-color:hsl(256, 67%, 59%);
+    color: white;
+    grid-area: box-2;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-div .mini-div:nth-child(3){
+    background-color: hsl(254, 88%, 90%);
+    grid-area: box-3;
+    padding-top: 2.75rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.main-div .mini-div:nth-child(4){
+    background-color: hsl(39, 100%, 71%);
+    grid-area: box-4;
+    padding-top: 1.75rem;
+    padding-right: 2.25rem;
+
+}
+.main-div .mini-div:nth-child(5){
+    background-color: hsl(0, 0%, 100%); 
+    grid-area: box-5;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.main-div .mini-div:nth-child(6){
+    background-color: hsl(39, 100%, 71%);
+    grid-area: box-6;
+    position: relative;
+    padding-top: 1rem;
+    padding-right: 1.75rem;
+}
+.main-div .mini-div:nth-child(7){
+    background-color: white; 
+    grid-area: box-7;
+    padding: 1.5rem;
+}
+.main-div .mini-div:last-child{
+    background-color: hsl(256, 67%, 59%);
+    color: white;
+    grid-area: box-8;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1.75fr 2fr;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+
+
+
+
+/* birinci qutunun ici: */
+    
+.quicker{
+    font-size:2.75rem;
+    font-weight: 500;
+}
+.em0{
+    color: hsl(256, 67%, 59%);
+}
+.post-img{
+     margin-top: 1rem;
+     width: 250px;
+     height: 117px;
 }
 /* ikinciqutunun ici: */
 .social-media{
-    font-size: 60px;
-    color: white;
-    padding-left: 40px;
-    padding-top: 50px;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 500;
 }
-.stars{
-    padding-left: 120px;
-    padding-top: 10px;
+.stars-img{
     width: 250px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
 }
 .over{
-    color: white;
-    padding-left: 150px;
+    font-size: 1.5rem;
+    font-weight: 400;
     
 }
 /* ucuncu qutunun ici: */
 .schedule{
-    font-size: 30px;
-    padding-left: 40px;
-    padding-top: 50px;
-    font-weight: bold;
+    font-size:2rem;
+    font-weight: 500;
 }
-.scheduleimg{
-    height: 350px;
-    width: 229px; /* bir tamin ehemiyyeti */
-    padding-left: 40px;
-    padding-top: 20px;
-    position: absolute; /* bu hisse seklin istediyim hissesinin divin icine girmesi ucundur */                     
+.schedule-img{
+    position: absolute;
+    height: 410px;                      
     object-fit: cover;  
     object-position: left;
-    top: 200px;
+    top: 130px;
 }
 .optimize{
-    font-size: 20px;
-    padding-top: 370px;
-    padding-left: 45px;
-    
-    
+     font-size: 1.5rem;
+    font-weight: 400;
 }
 /* dorduncu qutunun ici: */
 .write{
-    font-size: 45px;
-    padding-left: 30px;
-    padding-top: 20px;
-    font-weight: bold;
+    font-size:2.75rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
 
 }
-.content{
-    height: 230px;
-    width: 230px;
-    padding-top: 30px;
-    padding-left: 30px;
+.content-img{
+    width: 280px;
+    height: 270px;
+    
+    margin-left: 2rem;
+    
 }
 /* 5ci qutunun ici: */
-.multiple{
-    height: 70px;
-    width: 240px;
+.multiple-img{
     position: absolute;
-    object-fit: cover;
-    object-position: left;
+    width: 400px;
 }
 .manage{
-    font-size: 37px;
-    padding-top: 40px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-size: 2.35rem;
+    font-weight: 500;
+    margin-top: 7rem;
 }
 /*6ci qutunun ici: */
 .maintain{
-    font-size: 35px;
-    padding-left: 30px;
-    padding-top: 20px;
-    font-weight: bold;
+    font-size: 2.35rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
-.consis{
-    height: 78px;
-    width: 200px;
-    padding-left: 25px;
-    padding-top: 5px;
+.consis-img{
+    width: 260px;
+    height: 160px;
+    margin-left: 2rem;
 }
 /*7ci qutunun ici: */
 .b56{
-    font-size: 75px;
-    padding-left: 30px;
-    padding-top: 30px;
+     font-size: 4rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1rem;
 }
 .faster{
-    font-size: 18px;
-    padding-left: 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
-.audience{
-    height: 60px;
-    width: 140px;
-    padding-left: 20px;
-    padding-top: 20px;
+.audience-img{
+    margin-top: 1.5rem;
+    width: 250px;
 }
 /* axrinci qutunun ici: */
-.followers{
-    float: left;
-    width: 50%;
-    object-fit: cover;
-    height: 200px;
-    width: 230px;
-    padding-left: 20px;
-    padding-top: 20px;
-    
-}
+.followers-img{ 
+    width: 250px;
+ }
 .grow{
-    float: left;
-    width: 50%;
-    font-size: 40px;
-    padding-top: 50px;
-    padding-left: 25px;
-    color: white;
-    font-weight: bold;
+    font-size:2.75rem;
+    font-weight: 500;
 
 }
     
+@media (max-width: 1024px){
+    .main-div{
+        grid-auto-rows: initial;
+        grid-template-areas: 
+        'box-1 box-1 box-2 box-2'
+        'box-1 box-1 box-2 box-2'
+        'box-3 box-3 box-4 box-4'
+        'box-3 box-3 box-4 box-4'
+        'box-5 box-5 box-6 box-6'
+        'box-5 box-5 box-6 box-6'
+        'box-7 box-7 box-8 box-8'
+        'box-7 box-7 box-8 box-8';
+    }
+    .main-div ,.mini-div:last-child{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:768px){
+    .main-div .mini-div{
+        text-align: center;
+    }
+    .main-div{
+        grid-template-areas: 
+        'box-2'
+        'box-5'
+        'box-6'
+        'box-3'
+        'box-8'
+        'box-7'
+        'box-1'
+        'box-4';
+    }
+    .main-div .mini-div:nth-child(4){
+        text-align: left;
+    }
+    .main-div .mini-div:nth-child(5){
+        text-align: left;
+    }
+    .main-div .mini-div:nth-child(6){
+        text-align: left;
+    }
+    .main-div .mini-div:nth-child(7){
+        text-align: left;
+    }
+    .main-div .mini-div:first-child{
+        padding: 2rem;
+        text-align: left;
+    }
+    .quicker{
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+    .post-img{
+        width: 320px;
+        height: 150px;
+        padding-left: 1.5rem;
+    }
+    .main-div .mini-div:nth-child(3){
+        padding-top: 2.75rem;
+        padding-right: 1rem;
+        padding-bottom: 2.5rem;
+        padding-left: 1rem;
+    }
+    .schedule{
+        font-size: 2.25px;
+    }
+    .schedule-img{
+        margin: 1rem 0;
+        position: initial;
+        height: initial;
+    }
+    .manage{
+        margin-top: 10rem;
+    }
+    .main-div .mini-div:last-child{
+        padding-top: 1.5rem;
+        padding-right: 4rem;
+    } 
+}
+@media(max-width:540px){
+    .manage{
+        margin-top: 6rem;
+    }
+}
+    
  
+
